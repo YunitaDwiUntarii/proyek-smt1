@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #1B5E20;
+    background-color: #E8F5E9; /* color background */
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #81C784;
+    height: 70px;
+    width: 100%;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    white-space: nowrap;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.navbar-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #1B5E20;
+}
+
+body {
+    padding-top: 80px;
+}
+
+    
+/* HERO MODERN AESTHETIC */
+.hero {
+    position: relative;
+    background-image: url(asset/bo.jpg), 
+                      linear-gradient(135deg, #e8f9e9, #c9f0d2);
+    background-size: cover;
+    background-position: center;
+    padding: 160px 20px;
+    padding-top: 110px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Overlay gelap lembut */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 40, 0, 0.35);
+    backdrop-filter: blur(2px);
+}
+
+/* Isi hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.3s ease;
+}
+
+/* Judul */
+.hero h1 {
+    font-size: 3.2em;
+    font-weight: 900;
+    text-shadow: 0px 4px 18px rgba(0,0,0,0.55);
+    margin-bottom: 25px;
+}
+
+/* Logo recycle */
+.logo {
+    width: 190px;
+    margin: 20px auto 35px;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+/* Tombol */
+.learn-more {
+    background: rgba(76, 175, 80, 0.9);
+    padding: 14px 32px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.learn-more:hover {
+    background: rgba(56, 142, 60, 0.95);
+    transform: scale(1.07);
+}
+
+/* Animasi lembut */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* TENTANG */
+.Tentang {
+    background-color: #C8E6C9;
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.Tentang img {
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.Tentang .text {
+    max-width: 800px;
+    font-size: 18px;
+    color: #255d39;
+    line-height: 1.6;
+}
+
+/* ANALISIS */
+
+.analisis-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card-analisis {
+    width: 260px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    transform: translateY(0);
+}
+
+.card-analisis img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-analisis h3 {
+    color: #0b6c3c;
+    margin-top: 15px;
+}
+
+.card-analisis:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.card-analisis:active {
+    transform: scale(0.94);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/* PRODUK */
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card-produk {
+    width: 260px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    transform: translateY(0);
+}
+
+.card-produk img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+
+.card-produk h3 {
+    color: #0b6c3c;
+    margin-top: 15px;
+}
+
+.card-produk:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.card-produk:active {
+    transform: scale(0.94);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+
+/* Team*/
+.team-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-member {
+    background: white;
+    width: 280px;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* ABOUT US */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #E8F5E9;
+    color: #388E3C;
+}
+
+.team-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.team-section h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.team-member {
+  width: 280px;              
+  height: 380px;             
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    color: #425961;
+    margin-bottom: 5px;
+}
+
+.team-member .position {
+    color: #555;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-member .desc {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.social-links a {
+    color: #000;
+    margin: 0 8px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #000;
+}
+
+/* FOOTER */
+.footer {
+    background: #81C784;
+    padding: 35px 20px;
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-container p {
+    margin: 5px 0 15px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #1B5E20;
+}
+
+.footer-copy {
+    font-size: 12px;
+    opacity: 0.85;
+}
